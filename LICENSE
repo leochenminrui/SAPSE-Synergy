@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 CHEN MINRUI
+Copyright (c) 2025 SAPSE-Synergy Authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,34 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## Third-Party Components
+
+This project includes or depends on the following third-party components:
+
+### Coq Standard Library
+- License: LGPL 2.1
+- Source: https://coq.inria.fr/
+
+### CompCert (corpus only, not distributed)
+- License: INRIA Non-Commercial License
+- Source: https://compcert.org/
+- Note: CompCert lemmas used as corpus data only; not redistributed
+
+### FAISS
+- License: MIT License
+- Source: https://github.com/facebookresearch/faiss
+
+### Transformers (Hugging Face)
+- License: Apache 2.0
+- Source: https://github.com/huggingface/transformers
+
+### Sentence Transformers
+- License: Apache 2.0
+- Source: https://github.com/UKPLab/sentence-transformers
+
+### PyTorch
+- License: BSD-style License
+- Source: https://pytorch.org/

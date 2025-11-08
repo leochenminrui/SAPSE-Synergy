@@ -1,0 +1,6 @@
+category,num_lemmas,verified_baseline,verified_strict,verified_fast,verified_synergy,abstained_strict,abstained_synergy
+Arithmetic,334,97,97,75,75,24,0
+Boolean,381,134,132,114,114,37,0
+Inductive,129,40,40,37,37,4,0
+List,71,30,30,26,26,2,0
+Misc,1085,451,447,404,404,39,1

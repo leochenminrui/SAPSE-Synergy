@@ -1,0 +1,9 @@
+dimension,value,count,ratio
+Category,Arithmetic,22,22.92%
+Category,Boolean,20,20.83%
+Category,Inductive,3,3.12%
+Category,List,4,4.17%
+Category,Misc,47,48.96%
+Complexity,shallow,96,100.00%
+Complexity,medium,0,0.00%
+Complexity,deep,0,0.00%

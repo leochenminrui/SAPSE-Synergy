@@ -1,0 +1,11 @@
+{
+  "total_lost": 96,
+  "failed_in_fast": 96,
+  "abstained_in_fast": 0,
+  "error_in_fast": 0,
+  "timeout_in_fast": 0,
+  "failed_in_synergy": 96,
+  "abstained_in_synergy": 0,
+  "error_in_synergy": 0,
+  "timeout_in_synergy": 0
+}

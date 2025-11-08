@@ -1,0 +1,2 @@
+band,num_lemmas,verified_baseline,verified_strict,verified_fast,verified_synergy,abstained_strict,abstained_synergy
+shallow,2000,752,746,656,656,106,1
