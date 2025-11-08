@@ -1,0 +1,595 @@
+DIGEST c9a5dcef3aa188e62d609234d7966bcf
+FSAPSE.Sanitizer
+R27:32 Stdlib.Strings.String <> <> lib
+R34:37 Stdlib.Lists.List <> <> lib
+R39:43 Stdlib.Arith.Arith <> <> lib
+R45:52 Stdlib.Arith.PeanoNat <> <> lib
+R54:57 Stdlib.Bool.Bool <> <> lib
+R87:103 Stdlib.Classes.Morphisms <> <> lib
+R113:125 Stdlib.Lists.List ListNotations <> mod
+R154:159 SAPSE.Syntax <> <> lib
+R161:166 SAPSE.Typing <> <> lib
+R168:176 SAPSE.Semantics <> <> lib
+mod 187:201 <> SAPSE_Sanitizer
+R211:222 SAPSE.Syntax SAPSE_Syntax <> mod
+R224:235 SAPSE.Typing SAPSE_Typing <> mod
+R237:251 SAPSE.Semantics SAPSE_Semantics <> mod
+def 341:345 SAPSE_Sanitizer R_req
+R358:360 SAPSE.Typing SAPSE_Typing ctx def
+binder 348:353 <> Γ_ext:1
+binder 355:356 <> Γ:2
+R365:367 SAPSE.Typing SAPSE_Typing ctx def
+R374:377 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R372:373 SAPSE.Sanitizer <> Γ:2 var
+R378:383 SAPSE.Sanitizer <> Γ_ext:1 var
+prf 393:410 SAPSE_Sanitizer req_includes_right
+binder 421:426 <> Γ_ext:3
+binder 428:429 <> Γ:4
+R436:440 SAPSE.Typing SAPSE_Typing :::x_'⊆'_x not
+R434:435 SAPSE.Sanitizer <> Γ:4 var
+R441:445 SAPSE.Sanitizer SAPSE_Sanitizer R_req def
+R447:452 SAPSE.Sanitizer <> Γ_ext:3 var
+R454:455 SAPSE.Sanitizer <> Γ:4 var
+R474:485 SAPSE.Typing SAPSE_Typing ctx_includes def
+R488:492 SAPSE.Sanitizer SAPSE_Sanitizer R_req def
+R529:547 SAPSE.Typing SAPSE_Typing lookup_app_preserve thm
+R529:547 SAPSE.Typing SAPSE_Typing lookup_app_preserve thm
+prf 633:647 SAPSE_Sanitizer lookup_app_left
+R661:665 SAPSE.Syntax SAPSE_Syntax ident def
+binder 659:659 <> x:5
+R671:672 SAPSE.Syntax SAPSE_Syntax ty ind
+binder 669:669 <> A:6
+binder 675:676 <> Γ:7
+binder 678:679 <> Δ:8
+R704:707 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R695:697 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R684:689 SAPSE.Typing SAPSE_Typing lookup def
+R691:691 SAPSE.Sanitizer <> x:5 var
+R693:694 SAPSE.Sanitizer <> Γ:7 var
+R698:701 Corelib.Init.Datatypes <> Some constr
+R703:703 SAPSE.Sanitizer <> A:6 var
+R727:729 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R708:713 SAPSE.Typing SAPSE_Typing lookup def
+R715:715 SAPSE.Sanitizer <> x:5 var
+R720:723 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R718:719 SAPSE.Sanitizer <> Γ:7 var
+R724:725 SAPSE.Sanitizer <> Δ:8 var
+R730:733 Corelib.Init.Datatypes <> Some constr
+R735:735 SAPSE.Sanitizer <> A:6 var
+R844:853 Stdlib.Strings.String <> eqb def
+R844:853 Stdlib.Strings.String <> eqb def
+prf 989:1001 SAPSE_Sanitizer weakening_req
+binder 1012:1017 <> Γ_ext:9
+binder 1019:1020 <> Γ:10
+binder 1022:1022 <> t:11
+binder 1024:1024 <> T:12
+R1043:1046 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1031:1035 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R1037:1041 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R1029:1030 SAPSE.Sanitizer <> Γ:10 var
+R1036:1036 SAPSE.Sanitizer <> t:11 var
+R1042:1042 SAPSE.Sanitizer <> T:12 var
+R1062:1066 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R1068:1072 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R1047:1051 SAPSE.Sanitizer SAPSE_Sanitizer R_req def
+R1053:1058 SAPSE.Sanitizer <> Γ_ext:9 var
+R1060:1061 SAPSE.Sanitizer <> Γ:10 var
+R1067:1067 SAPSE.Sanitizer <> t:11 var
+R1073:1073 SAPSE.Sanitizer <> T:12 var
+R1092:1096 SAPSE.Sanitizer SAPSE_Sanitizer R_req def
+R1155:1169 SAPSE.Sanitizer SAPSE_Sanitizer lookup_app_left thm
+R1155:1169 SAPSE.Sanitizer SAPSE_Sanitizer lookup_app_left thm
+R1361:1362 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1356:1356 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1358:1358 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1360:1360 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1365:1368 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1383:1383 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1393:1397 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1389:1390 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1384:1384 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1386:1386 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1388:1388 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1361:1362 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1356:1356 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1358:1358 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1360:1360 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1365:1368 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1383:1383 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1393:1397 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1389:1390 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1384:1384 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1386:1386 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1388:1388 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1523:1524 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1518:1518 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1520:1520 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1522:1522 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1527:1530 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1545:1545 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1555:1559 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1551:1552 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1546:1546 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1548:1548 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1550:1550 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1523:1524 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1518:1518 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1520:1520 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1522:1522 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1527:1530 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1545:1545 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1555:1559 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1551:1552 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1546:1546 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1548:1548 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1550:1550 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+ind 1661:1671 SAPSE_Sanitizer WellFormedU
+constr 1693:1698 SAPSE_Sanitizer WF_Var
+constr 1735:1740 SAPSE_Sanitizer WF_Nat
+constr 1777:1783 SAPSE_Sanitizer WF_Bool
+constr 1820:1825 SAPSE_Sanitizer WF_Add
+constr 1900:1904 SAPSE_Sanitizer WF_Eq
+constr 1979:1984 SAPSE_Sanitizer WF_Lam
+constr 2055:2060 SAPSE_Sanitizer WF_App
+constr 2135:2143 SAPSE_Sanitizer WF_Forall
+R1679:1682 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1675:1678 SAPSE.Syntax SAPSE_Syntax term ind
+binder 1709:1709 <> x:15
+R1712:1722 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1725:1728 SAPSE.Syntax SAPSE_Syntax tVar constr
+R1730:1730 SAPSE.Sanitizer <> x:15 var
+binder 1751:1751 <> n:16
+R1754:1764 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1767:1770 SAPSE.Syntax SAPSE_Syntax tNat constr
+R1772:1772 SAPSE.Sanitizer <> n:16 var
+binder 1793:1793 <> b:17
+R1796:1806 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1809:1813 SAPSE.Syntax SAPSE_Syntax tBool constr
+R1815:1815 SAPSE.Sanitizer <> b:17 var
+binder 1836:1836 <> a:18
+binder 1838:1838 <> b:19
+R1854:1857 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1841:1851 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1853:1853 SAPSE.Sanitizer <> a:18 var
+R1871:1874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1858:1868 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1870:1870 SAPSE.Sanitizer <> b:19 var
+R1875:1885 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1888:1891 SAPSE.Syntax SAPSE_Syntax tAdd constr
+R1893:1893 SAPSE.Sanitizer <> a:18 var
+R1895:1895 SAPSE.Sanitizer <> b:19 var
+binder 1916:1916 <> a:20
+binder 1918:1918 <> b:21
+R1934:1937 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1921:1931 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1933:1933 SAPSE.Sanitizer <> a:20 var
+R1951:1954 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1938:1948 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1950:1950 SAPSE.Sanitizer <> b:21 var
+R1955:1965 SAPSE.Sanitizer <> WellFormedU:13 ind
+R1968:1970 SAPSE.Syntax SAPSE_Syntax tEq constr
+R1972:1972 SAPSE.Sanitizer <> a:20 var
+R1974:1974 SAPSE.Sanitizer <> b:21 var
+binder 1995:1995 <> x:22
+binder 1997:1997 <> A:23
+binder 1999:2002 <> body:24
+R2021:2024 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2005:2015 SAPSE.Sanitizer <> WellFormedU:13 ind
+R2017:2020 SAPSE.Sanitizer <> body:24 var
+R2025:2035 SAPSE.Sanitizer <> WellFormedU:13 ind
+R2038:2041 SAPSE.Syntax SAPSE_Syntax tLam constr
+R2043:2043 SAPSE.Sanitizer <> x:22 var
+R2045:2045 SAPSE.Sanitizer <> A:23 var
+R2047:2050 SAPSE.Sanitizer <> body:24 var
+binder 2071:2071 <> a:25
+binder 2073:2073 <> b:26
+R2089:2092 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2076:2086 SAPSE.Sanitizer <> WellFormedU:13 ind
+R2088:2088 SAPSE.Sanitizer <> a:25 var
+R2106:2109 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2093:2103 SAPSE.Sanitizer <> WellFormedU:13 ind
+R2105:2105 SAPSE.Sanitizer <> b:26 var
+R2110:2120 SAPSE.Sanitizer <> WellFormedU:13 ind
+R2123:2126 SAPSE.Syntax SAPSE_Syntax tApp constr
+R2128:2128 SAPSE.Sanitizer <> a:25 var
+R2130:2130 SAPSE.Sanitizer <> b:26 var
+binder 2154:2154 <> x:27
+binder 2156:2156 <> A:28
+binder 2158:2161 <> body:29
+R2180:2183 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2164:2174 SAPSE.Sanitizer <> WellFormedU:13 ind
+R2176:2179 SAPSE.Sanitizer <> body:29 var
+R2184:2194 SAPSE.Sanitizer <> WellFormedU:13 ind
+R2197:2203 SAPSE.Syntax SAPSE_Syntax tForall constr
+R2205:2205 SAPSE.Sanitizer <> x:27 var
+R2207:2207 SAPSE.Sanitizer <> A:28 var
+R2209:2212 SAPSE.Sanitizer <> body:29 var
+scheme 1661:1671 SAPSE_Sanitizer WellFormedU_ind
+scheme 1661:1671 SAPSE_Sanitizer WellFormedU_sind
+R2244:2254 SAPSE.Sanitizer <> WellFormedU ind
+def 2276:2281 SAPSE_Sanitizer R_bind
+R2286:2289 SAPSE.Syntax SAPSE_Syntax term ind
+binder 2284:2284 <> t:30
+R2294:2297 SAPSE.Syntax SAPSE_Syntax term ind
+R2302:2302 SAPSE.Sanitizer <> t:30 var
+prf 2312:2324 SAPSE_Sanitizer R_bind_typing
+binder 2335:2336 <> Γ:31
+binder 2338:2338 <> t:32
+binder 2340:2340 <> T:33
+R2358:2361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2345:2355 SAPSE.Sanitizer SAPSE_Sanitizer WellFormedU ind
+R2357:2357 SAPSE.Sanitizer <> t:32 var
+R2376:2379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2364:2368 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R2370:2374 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R2362:2363 SAPSE.Sanitizer <> Γ:31 var
+R2369:2369 SAPSE.Sanitizer <> t:32 var
+R2375:2375 SAPSE.Sanitizer <> T:33 var
+R2382:2386 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R2395:2399 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R2380:2381 SAPSE.Sanitizer <> Γ:31 var
+R2387:2392 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R2394:2394 SAPSE.Sanitizer <> t:32 var
+R2400:2400 SAPSE.Sanitizer <> T:33 var
+prf 2449:2458 SAPSE_Sanitizer R_bind_sem
+binder 2469:2470 <> ρ:34
+binder 2472:2472 <> t:35
+R2484:2488 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2475:2477 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R2479:2481 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R2482:2483 SAPSE.Sanitizer <> ρ:34 var
+R2478:2478 SAPSE.Sanitizer <> t:35 var
+R2489:2491 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R2500:2502 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R2503:2504 SAPSE.Sanitizer <> ρ:34 var
+R2492:2497 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R2499:2499 SAPSE.Sanitizer <> t:35 var
+R2529:2534 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+def 2616:2623 SAPSE_Sanitizer canon_eq
+R2630:2633 SAPSE.Syntax SAPSE_Syntax term ind
+binder 2626:2626 <> a:36
+binder 2628:2628 <> b:37
+R2642:2644 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R2638:2641 SAPSE.Syntax SAPSE_Syntax term ind
+R2645:2648 SAPSE.Syntax SAPSE_Syntax term ind
+R2658:2664 Stdlib.Arith.PeanoNat Nat leb def
+R2667:2675 SAPSE.Syntax SAPSE_Syntax term_size def
+R2677:2677 SAPSE.Sanitizer <> a:36 var
+R2681:2689 SAPSE.Syntax SAPSE_Syntax term_size def
+R2691:2691 SAPSE.Sanitizer <> b:37 var
+R2710:2710 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2712:2712 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2714:2714 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2711:2711 SAPSE.Sanitizer <> b:37 var
+R2713:2713 SAPSE.Sanitizer <> a:36 var
+R2699:2699 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2701:2701 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2703:2703 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2700:2700 SAPSE.Sanitizer <> a:36 var
+R2702:2702 SAPSE.Sanitizer <> b:37 var
+def 2799:2802 SAPSE_Sanitizer R_eq
+R2807:2810 SAPSE.Syntax SAPSE_Syntax term ind
+binder 2805:2805 <> t:38
+R2815:2818 SAPSE.Syntax SAPSE_Syntax term ind
+R2831:2831 SAPSE.Sanitizer <> t:38 var
+R2842:2844 SAPSE.Syntax SAPSE_Syntax tEq constr
+R2869:2872 SAPSE.Sanitizer <> R_eq:39 def
+binder 2863:2864 <> a':41
+R2895:2898 SAPSE.Sanitizer <> R_eq:39 def
+binder 2889:2890 <> b':42
+R2927:2934 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R2936:2937 SAPSE.Sanitizer <> a':41 var
+R2939:2940 SAPSE.Sanitizer <> b':42 var
+R2916:2916 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2919:2919 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2922:2922 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2951:2953 SAPSE.Syntax SAPSE_Syntax tEq constr
+R2965:2968 SAPSE.Syntax SAPSE_Syntax tAdd constr
+R2984:2987 SAPSE.Syntax SAPSE_Syntax tAdd constr
+R2990:2993 SAPSE.Sanitizer <> R_eq:39 def
+R2999:3002 SAPSE.Sanitizer <> R_eq:39 def
+R3011:3014 SAPSE.Syntax SAPSE_Syntax tApp constr
+R3030:3033 SAPSE.Syntax SAPSE_Syntax tApp constr
+R3036:3039 SAPSE.Sanitizer <> R_eq:39 def
+R3045:3048 SAPSE.Sanitizer <> R_eq:39 def
+R3057:3060 SAPSE.Syntax SAPSE_Syntax tLam constr
+R3076:3079 SAPSE.Syntax SAPSE_Syntax tLam constr
+R3086:3089 SAPSE.Sanitizer <> R_eq:39 def
+R3101:3107 SAPSE.Syntax SAPSE_Syntax tForall constr
+R3120:3126 SAPSE.Syntax SAPSE_Syntax tForall constr
+R3133:3136 SAPSE.Sanitizer <> R_eq:39 def
+R3166:3166 SAPSE.Sanitizer <> t:38 var
+prf 3239:3252 SAPSE_Sanitizer denote_eq_swap
+binder 3263:3264 <> ρ:43
+binder 3266:3266 <> a:44
+binder 3268:3268 <> b:45
+R3286:3290 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3271:3273 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R3281:3283 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R3284:3285 SAPSE.Sanitizer <> ρ:43 var
+R3274:3276 SAPSE.Syntax SAPSE_Syntax tEq constr
+R3278:3278 SAPSE.Sanitizer <> a:44 var
+R3280:3280 SAPSE.Sanitizer <> b:45 var
+R3291:3293 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R3301:3303 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R3304:3305 SAPSE.Sanitizer <> ρ:43 var
+R3294:3296 SAPSE.Syntax SAPSE_Syntax tEq constr
+R3298:3298 SAPSE.Sanitizer <> b:45 var
+R3300:3300 SAPSE.Sanitizer <> a:44 var
+R3332:3337 SAPSE.Semantics SAPSE_Semantics denote def
+R3348:3359 SAPSE.Semantics SAPSE_Semantics eval_eq_swap thm
+R3348:3359 SAPSE.Semantics SAPSE_Semantics eval_eq_swap thm
+R3348:3359 SAPSE.Semantics SAPSE_Semantics eval_eq_swap thm
+prf 3421:3435 SAPSE_Sanitizer denote_eval_iff
+binder 3446:3447 <> ρ:46
+binder 3449:3449 <> t:47
+R3463:3467 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3454:3456 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R3458:3460 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R3461:3462 SAPSE.Sanitizer <> ρ:46 var
+R3457:3457 SAPSE.Sanitizer <> t:47 var
+R3474:3477 SAPSE.Semantics SAPSE_Semantics eval def
+R3479:3480 SAPSE.Sanitizer <> ρ:46 var
+R3482:3482 SAPSE.Sanitizer <> t:47 var
+R3489:3492 Corelib.Init.Datatypes <> Some constr
+R3499:3504 SAPSE.Semantics SAPSE_Semantics asProp def
+R3510:3513 Corelib.Init.Datatypes <> None constr
+R3518:3521 Corelib.Init.Logic <> True ind
+R3554:3559 SAPSE.Semantics SAPSE_Semantics denote def
+prf 3616:3627 SAPSE_Sanitizer R_eq_eval_eq
+binder 3638:3639 <> ρ:48
+binder 3641:3641 <> t:49
+R3655:3657 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3646:3649 SAPSE.Semantics SAPSE_Semantics eval def
+R3651:3652 SAPSE.Sanitizer <> ρ:48 var
+R3654:3654 SAPSE.Sanitizer <> t:49 var
+R3658:3661 SAPSE.Semantics SAPSE_Semantics eval def
+R3663:3664 SAPSE.Sanitizer <> ρ:48 var
+R3667:3670 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R3672:3672 SAPSE.Sanitizer <> t:49 var
+R3821:3828 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R3831:3834 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R3841:3844 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R3821:3828 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R3831:3834 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R3841:3844 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R3885:3892 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R3919:3925 Stdlib.Arith.PeanoNat Nat leb def
+R3928:3936 SAPSE.Syntax SAPSE_Syntax term_size def
+R3939:3942 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R3950:3958 SAPSE.Syntax SAPSE_Syntax term_size def
+R3961:3964 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R3919:3925 Stdlib.Arith.PeanoNat Nat leb def
+R3928:3936 SAPSE.Syntax SAPSE_Syntax term_size def
+R3939:3942 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R3950:3958 SAPSE.Syntax SAPSE_Syntax term_size def
+R3961:3964 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4140:4151 SAPSE.Semantics SAPSE_Semantics eval_eq_swap thm
+R4140:4151 SAPSE.Semantics SAPSE_Semantics eval_eq_swap thm
+R4140:4151 SAPSE.Semantics SAPSE_Semantics eval_eq_swap thm
+prf 4413:4429 SAPSE_Sanitizer denote_tEq_proper
+binder 4440:4441 <> ρ:50
+binder 4443:4443 <> a:51
+binder 4445:4446 <> a':52
+binder 4448:4448 <> b:53
+binder 4450:4451 <> b':54
+R4478:4483 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4465:4467 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4456:4459 SAPSE.Semantics SAPSE_Semantics eval def
+R4461:4462 SAPSE.Sanitizer <> ρ:50 var
+R4464:4464 SAPSE.Sanitizer <> a:51 var
+R4468:4471 SAPSE.Semantics SAPSE_Semantics eval def
+R4473:4474 SAPSE.Sanitizer <> ρ:50 var
+R4476:4477 SAPSE.Sanitizer <> a':52 var
+R4506:4511 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4493:4495 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4484:4487 SAPSE.Semantics SAPSE_Semantics eval def
+R4489:4490 SAPSE.Sanitizer <> ρ:50 var
+R4492:4492 SAPSE.Sanitizer <> b:53 var
+R4496:4499 SAPSE.Semantics SAPSE_Semantics eval def
+R4501:4502 SAPSE.Sanitizer <> ρ:50 var
+R4504:4505 SAPSE.Sanitizer <> b':54 var
+R4527:4531 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R4512:4514 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R4522:4524 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R4525:4526 SAPSE.Sanitizer <> ρ:50 var
+R4515:4517 SAPSE.Syntax SAPSE_Syntax tEq constr
+R4519:4519 SAPSE.Sanitizer <> a:51 var
+R4521:4521 SAPSE.Sanitizer <> b:53 var
+R4532:4534 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R4544:4546 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R4547:4548 SAPSE.Sanitizer <> ρ:50 var
+R4535:4537 SAPSE.Syntax SAPSE_Syntax tEq constr
+R4539:4540 SAPSE.Sanitizer <> a':52 var
+R4542:4543 SAPSE.Sanitizer <> b':54 var
+R4596:4601 SAPSE.Semantics SAPSE_Semantics denote def
+prf 4656:4663 SAPSE_Sanitizer R_eq_sem
+binder 4674:4675 <> ρ:55
+binder 4677:4677 <> t:56
+R4689:4693 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R4680:4682 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R4684:4686 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R4687:4688 SAPSE.Sanitizer <> ρ:55 var
+R4683:4683 SAPSE.Sanitizer <> t:56 var
+R4694:4696 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R4703:4705 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R4706:4707 SAPSE.Sanitizer <> ρ:55 var
+R4697:4700 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4702:4702 SAPSE.Sanitizer <> t:56 var
+R4802:4807 SAPSE.Semantics SAPSE_Semantics denote def
+R4835:4840 SAPSE.Semantics SAPSE_Semantics denote def
+R4871:4874 SAPSE.Semantics SAPSE_Semantics eval def
+R4919:4922 SAPSE.Semantics SAPSE_Semantics eval def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4871:4874 SAPSE.Semantics SAPSE_Semantics eval def
+R4919:4922 SAPSE.Semantics SAPSE_Semantics eval def
+R4919:4922 SAPSE.Semantics SAPSE_Semantics eval def
+R4919:4922 SAPSE.Semantics SAPSE_Semantics eval def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R4967:4970 SAPSE.Semantics SAPSE_Semantics eval def
+R4976:4979 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5025:5028 SAPSE.Semantics SAPSE_Semantics eval def
+R5034:5037 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5131:5138 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R5141:5144 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5151:5154 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5131:5138 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R5141:5144 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5151:5154 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5195:5202 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R5229:5235 Stdlib.Arith.PeanoNat Nat leb def
+R5238:5246 SAPSE.Syntax SAPSE_Syntax term_size def
+R5249:5252 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5260:5268 SAPSE.Syntax SAPSE_Syntax term_size def
+R5271:5274 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5229:5235 Stdlib.Arith.PeanoNat Nat leb def
+R5238:5246 SAPSE.Syntax SAPSE_Syntax term_size def
+R5249:5252 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5260:5268 SAPSE.Syntax SAPSE_Syntax term_size def
+R5271:5274 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5390:5406 SAPSE.Sanitizer SAPSE_Sanitizer denote_tEq_proper thm
+R5390:5406 SAPSE.Sanitizer SAPSE_Sanitizer denote_tEq_proper thm
+R5425:5436 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5425:5436 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5425:5436 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5468:5479 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5468:5479 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5468:5479 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5618:5631 SAPSE.Sanitizer SAPSE_Sanitizer denote_eq_swap thm
+R5618:5631 SAPSE.Sanitizer SAPSE_Sanitizer denote_eq_swap thm
+R5649:5665 SAPSE.Sanitizer SAPSE_Sanitizer denote_tEq_proper thm
+R5649:5665 SAPSE.Sanitizer SAPSE_Sanitizer denote_tEq_proper thm
+R5684:5695 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5684:5695 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5684:5695 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5727:5738 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5727:5738 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+R5727:5738 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_eval_eq thm
+prf 5766:5776 SAPSE_Sanitizer R_eq_typing
+binder 5787:5788 <> Γ:57
+binder 5790:5790 <> t:58
+binder 5792:5792 <> T:59
+R5809:5812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5797:5801 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R5803:5807 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R5795:5796 SAPSE.Sanitizer <> Γ:57 var
+R5802:5802 SAPSE.Sanitizer <> t:58 var
+R5808:5808 SAPSE.Sanitizer <> T:59 var
+R5815:5819 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R5826:5830 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R5813:5814 SAPSE.Sanitizer <> Γ:57 var
+R5820:5823 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R5825:5825 SAPSE.Sanitizer <> t:58 var
+R5831:5831 SAPSE.Sanitizer <> T:59 var
+R6083:6090 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R6093:6096 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R6103:6106 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R6083:6090 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R6093:6096 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R6103:6106 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R6153:6160 SAPSE.Sanitizer SAPSE_Sanitizer canon_eq def
+R6185:6191 Stdlib.Arith.PeanoNat Nat leb def
+R6194:6202 SAPSE.Syntax SAPSE_Syntax term_size def
+R6205:6208 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R6216:6224 SAPSE.Syntax SAPSE_Syntax term_size def
+R6227:6230 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R6185:6191 Stdlib.Arith.PeanoNat Nat leb def
+R6194:6202 SAPSE.Syntax SAPSE_Syntax term_size def
+R6205:6208 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R6216:6224 SAPSE.Syntax SAPSE_Syntax term_size def
+R6227:6230 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+def 6553:6557 SAPSE_Sanitizer R_AST
+R6570:6572 SAPSE.Typing SAPSE_Typing ctx def
+binder 6560:6565 <> Γ_ext:60
+binder 6567:6568 <> Γ:61
+R6578:6581 SAPSE.Syntax SAPSE_Syntax term ind
+binder 6576:6576 <> t:62
+R6590:6592 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6587:6589 SAPSE.Typing SAPSE_Typing ctx def
+R6593:6596 SAPSE.Syntax SAPSE_Syntax term ind
+R6615:6619 SAPSE.Sanitizer SAPSE_Sanitizer R_req def
+R6621:6626 SAPSE.Sanitizer <> Γ_ext:60 var
+R6628:6629 SAPSE.Sanitizer <> Γ:61 var
+binder 6608:6610 <> Γ':63
+R6646:6651 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R6653:6653 SAPSE.Sanitizer <> t:62 var
+binder 6640:6641 <> t1:64
+R6670:6673 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R6675:6676 SAPSE.Sanitizer <> t1:64 var
+binder 6664:6665 <> t2:65
+R6683:6683 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6687:6688 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6691:6691 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6684:6686 SAPSE.Sanitizer <> Γ':63 var
+R6689:6690 SAPSE.Sanitizer <> t2:65 var
+R6699:6713 SAPSE.Sanitizer SAPSE_Sanitizer <> mod

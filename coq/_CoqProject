@@ -1,0 +1,6 @@
+-Q theories SAPSE
+theories/Syntax.v
+theories/Typing.v
+theories/Semantics.v
+theories/Sanitizer.v
+theories/Soundness.v

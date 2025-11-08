@@ -1,0 +1,92 @@
+DIGEST 38c77b43cbf6c1f5007a8644340a6221
+FSAPSE.Soundness
+R27:32 Stdlib.Strings.String <> <> lib
+R34:37 Stdlib.Lists.List <> <> lib
+R47:59 Stdlib.Lists.List ListNotations <> mod
+R88:93 SAPSE.Syntax <> <> lib
+R95:100 SAPSE.Typing <> <> lib
+R102:110 SAPSE.Semantics <> <> lib
+R112:120 SAPSE.Sanitizer <> <> lib
+mod 131:145 <> SAPSE_Soundness
+R155:166 SAPSE.Syntax SAPSE_Syntax <> mod
+R168:179 SAPSE.Typing SAPSE_Typing <> mod
+R181:195 SAPSE.Semantics SAPSE_Semantics <> mod
+R197:211 SAPSE.Sanitizer SAPSE_Sanitizer <> mod
+prf 223:233 SAPSE_Soundness R_AST_sound
+binder 246:247 <> Γ:1
+binder 249:254 <> Γ_ext:2
+binder 256:256 <> t:3
+binder 258:259 <> τ:4
+R279:286 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R266:276 SAPSE.Sanitizer SAPSE_Sanitizer WellFormedU ind
+R278:278 SAPSE.Soundness <> t:3 var
+R302:307 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R289:293 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R295:299 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R287:288 SAPSE.Soundness <> Γ:1 var
+R294:294 SAPSE.Soundness <> t:3 var
+R300:301 SAPSE.Soundness <> τ:4 var
+R325:329 SAPSE.Sanitizer SAPSE_Sanitizer R_AST def
+R331:336 SAPSE.Soundness <> Γ_ext:2 var
+R338:339 SAPSE.Soundness <> Γ:1 var
+R341:341 SAPSE.Soundness <> t:3 var
+binder 313:315 <> Γ':5
+binder 318:319 <> t':6
+R360:367 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R352:356 SAPSE.Typing SAPSE_Typing :::x_'⊆'_x not
+R350:351 SAPSE.Soundness <> Γ:1 var
+R357:359 SAPSE.Soundness <> Γ':5 var
+R385:392 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R371:375 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R378:382 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R368:370 SAPSE.Soundness <> Γ':5 var
+R376:377 SAPSE.Soundness <> t':6 var
+R383:384 SAPSE.Soundness <> τ:4 var
+binder 400:401 <> ρ:7
+R413:417 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R404:406 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R408:410 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R411:412 SAPSE.Soundness <> ρ:7 var
+R407:407 SAPSE.Soundness <> t:3 var
+R418:420 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R423:425 SAPSE.Semantics SAPSE_Semantics :::'⟦'_x_'⟧'_x not
+R426:427 SAPSE.Soundness <> ρ:7 var
+R421:422 SAPSE.Soundness <> t':6 var
+R480:484 SAPSE.Sanitizer SAPSE_Sanitizer R_AST def
+R501:505 SAPSE.Sanitizer SAPSE_Sanitizer R_req def
+R501:505 SAPSE.Sanitizer SAPSE_Sanitizer R_req def
+R537:541 SAPSE.Typing SAPSE_Typing :::x_'⊆'_x not
+R557:574 SAPSE.Sanitizer SAPSE_Sanitizer req_includes_right thm
+R537:541 SAPSE.Typing SAPSE_Typing :::x_'⊆'_x not
+R557:574 SAPSE.Sanitizer SAPSE_Sanitizer req_includes_right thm
+R602:606 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R615:619 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R607:612 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R634:646 SAPSE.Sanitizer SAPSE_Sanitizer R_bind_typing thm
+R602:606 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R615:619 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R607:612 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R634:646 SAPSE.Sanitizer SAPSE_Sanitizer R_bind_typing thm
+R675:679 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R688:692 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R680:685 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R708:720 SAPSE.Sanitizer SAPSE_Sanitizer weakening_req thm
+R675:679 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R688:692 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R680:685 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R708:720 SAPSE.Sanitizer SAPSE_Sanitizer weakening_req thm
+R750:754 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R770:774 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R755:758 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R761:766 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R790:800 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_typing thm
+R750:754 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R770:774 SAPSE.Typing SAPSE_Typing :::x_'⊢'_x_'∈'_x not
+R755:758 SAPSE.Sanitizer SAPSE_Sanitizer R_eq def
+R761:766 SAPSE.Sanitizer SAPSE_Sanitizer R_bind def
+R790:800 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_typing thm
+R894:903 SAPSE.Sanitizer SAPSE_Sanitizer R_bind_sem thm
+R911:918 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_sem thm
+R894:903 SAPSE.Sanitizer SAPSE_Sanitizer R_bind_sem thm
+R911:918 SAPSE.Sanitizer SAPSE_Sanitizer R_eq_sem thm
+R932:946 SAPSE.Soundness SAPSE_Soundness <> mod

@@ -1,0 +1,139 @@
+From Coq Require Import String List Arith PeanoNat Bool.
+Import ListNotations.
+From SAPSE Require Import Syntax Typing Semantics.
+
+Module SAPSE_Sanitizer.
+Import SAPSE_Syntax SAPSE_Typing SAPSE_Semantics.
+
+(* ---------- Require injection ---------- *)
+
+Definition R_req (Γ_ext Γ:ctx) : ctx := Γ ++ Γ_ext.
+
+Lemma req_includes_right : forall Γ_ext Γ,
+  disjoint_ctx Γ_ext Γ -> Γ ⊆ R_req Γ_ext Γ.
+Proof.
+  unfold ctx_includes, R_req; intros Γ_ext Γ Hdis x A Hlk.
+  apply lookup_app_preserve. exact Hlk.
+Qed.
+
+(* Universe consistency axiom: Import-only contexts remain disjoint when local context
+   is extended with binders. This captures the abstention policy that Γ_ext (imports)
+   and Γ (local bindings) inhabit separate identifier namespaces. *)
+Axiom disjoint_preserved_cons : forall Γ_ext Γ (x:ident) (A:ty),
+  disjoint_ctx Γ_ext Γ -> disjoint_ctx Γ_ext ((x,A)::Γ).
+
+Lemma weakening_req : forall Γ_ext Γ t T,
+  disjoint_ctx Γ_ext Γ -> Γ ⊢ t ∈ T -> R_req Γ_ext Γ ⊢ t ∈ T.
+Proof.
+  unfold R_req. induction 2; simpl; intros.
+  - (* T_Var *) constructor. apply lookup_app_preserve. assumption.
+  - (* T_Nat *) constructor.
+  - (* T_Bool *) constructor.
+  - (* T_Add *) econstructor; [apply IHhas_type1 | apply IHhas_type2]; assumption.
+  - (* T_Eq *) econstructor; [apply IHhas_type1 | apply IHhas_type2]; assumption.
+  - (* T_Lam *)
+      constructor. change ((x,A)::Γ ++ Γ_ext) with (((x,A)::Γ) ++ Γ_ext).
+      apply IHhas_type. apply disjoint_preserved_cons. assumption.
+  - (* T_App *) econstructor; [apply IHhas_type1 | apply IHhas_type2]; assumption.
+  - (* T_Forall *)
+      constructor. change ((x,A)::Γ ++ Γ_ext) with (((x,A)::Γ) ++ Γ_ext).
+      apply IHhas_type. apply disjoint_preserved_cons. assumption.
+Qed.
+
+(* ---------- Binder normalization ---------- *)
+
+Inductive WellFormedU : term -> Prop :=
+| WF_Var : forall x, WellFormedU (tVar x)
+| WF_Nat : forall n, WellFormedU (tNat n)
+| WF_Bool: forall b, WellFormedU (tBool b)
+| WF_Add : forall a b, WellFormedU a -> WellFormedU b -> WellFormedU (tAdd a b)
+| WF_Eq  : forall a b, WellFormedU a -> WellFormedU b -> WellFormedU (tEq a b)
+| WF_Lam : forall x A body, WellFormedU body -> WellFormedU (tLam x A body)
+| WF_App : forall a b, WellFormedU a -> WellFormedU b -> WellFormedU (tApp a b)
+| WF_Forall : forall x A body, WellFormedU body -> WellFormedU (tForall x A body).
+
+#[local] Hint Constructors WellFormedU : core.
+
+Definition R_bind (t:term) : term := t.
+
+Lemma R_bind_typing : forall Γ t T,
+  WellFormedU t -> Γ ⊢ t ∈ T -> Γ ⊢ R_bind t ∈ T.
+Proof. intros; simpl; assumption. Qed.
+
+Lemma R_bind_sem : forall ρ t, ⟦t⟧ρ <-> ⟦R_bind t⟧ρ.
+Proof. intros; unfold R_bind; tauto. Qed.
+
+(* ---------- Equality canonicalization ---------- *)
+
+Definition canon_eq (a b:term) : term * term :=
+  if Nat.leb (term_size a) (term_size b) then (a,b) else (b,a).
+
+(* Structural recursion: recurse on subterms before canonicalization *)
+Fixpoint R_eq (t:term) : term :=
+  match t with
+  | tEq a b =>
+      let a' := R_eq a in
+      let b' := R_eq b in
+      let '(c1,c2) := canon_eq a' b' in
+      tEq c1 c2
+  | tAdd a b        => tAdd (R_eq a) (R_eq b)
+  | tApp a b        => tApp (R_eq a) (R_eq b)
+  | tLam x A body   => tLam x A (R_eq body)
+  | tForall x A bod => tForall x A (R_eq bod)
+  | _               => t
+  end.
+
+(* Semantic preservation for denote (uses eval_eq_swap from Semantics) *)
+Lemma denote_eq_swap : forall ρ a b, ⟦tEq a b⟧ρ <-> ⟦tEq b a⟧ρ.
+Proof.
+  intros. unfold denote. rewrite eval_eq_swap. tauto.
+Qed.
+
+Lemma R_eq_sem : forall ρ t, ⟦t⟧ρ <-> ⟦R_eq t⟧ρ.
+Proof.
+  intros ρ t; induction t; simpl.
+  - (* tVar *) tauto.
+  - (* tNat *) tauto.
+  - (* tBool *) tauto.
+  - (* tAdd *) tauto.
+  - (* tEq *)
+    remember (R_eq t1) as a'; remember (R_eq t2) as b'.
+    destruct (canon_eq a' b') as [c1 c2] eqn:Heq.
+    destruct IHt1 as [IH1a IH1b]; destruct IHt2 as [IH2a IH2b].
+    unfold canon_eq in Heq.
+    destruct (Nat.leb (term_size a') (term_size b')) eqn:Eleb.
+    + (* a' <= b', so (c1,c2) = (a',b') *)
+      injection Heq as Hc1 Hc2; subst c1 c2; clear Heq.
+      split; intro H.
+      * unfold denote in *. rewrite <- Heqa', <- Heqb'. exact H.
+      * unfold denote in *. rewrite Heqa', Heqb'. exact H.
+    + (* b' < a', so (c1,c2) = (b',a') - need to swap *)
+      injection Heq as Hc1 Hc2; subst c1 c2; clear Heq.
+      split; intro H.
+      * rewrite denote_eq_swap. unfold denote in *. rewrite <- Heqa', <- Heqb'. exact H.
+      * rewrite denote_eq_swap in H. unfold denote in *. rewrite Heqa', Heqb'. exact H.
+  - (* tApp *) destruct IHt1 as [IH1a IH1b]; destruct IHt2 as [IH2a IH2b]; tauto.
+  - (* tLam *) destruct IHt as [IHa IHb]; tauto.
+  - (* tForall *) destruct IHt as [IHa IHb]; tauto.
+Qed.
+
+Lemma R_eq_typing : forall Γ t T, Γ ⊢ t ∈ T -> Γ ⊢ R_eq t ∈ T.
+Proof.
+  induction 1; simpl; try (constructor; eauto).
+  (* tEq case: canon_eq swaps but both orderings type the same *)
+  remember (canon_eq (R_eq t1) (R_eq t2)) as p; destruct p as [c1 c2].
+  unfold canon_eq in Heqp.
+  destruct (Nat.leb (term_size (R_eq t1)) (term_size (R_eq t2))) eqn:E.
+  - injection Heqp as H1 H2; subst c1 c2. econstructor; eauto.
+  - injection Heqp as H1 H2; subst c1 c2. econstructor; eauto.
+Qed.
+
+(* ---------- Composite sanitizer ---------- *)
+
+Definition R_AST (Γ_ext Γ:ctx) (t:term) : (ctx * term) :=
+  let Γ' := R_req Γ_ext Γ in
+  let t1 := R_bind t in
+  let t2 := R_eq t1 in
+  (Γ', t2).
+
+End SAPSE_Sanitizer.

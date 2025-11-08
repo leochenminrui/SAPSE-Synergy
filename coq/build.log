@@ -1,0 +1,6 @@
+ROCQ DEP VFILES
+ROCQ compile theories/Syntax.v
+ROCQ compile theories/Typing.v
+ROCQ compile theories/Semantics.v
+ROCQ compile theories/Sanitizer.v
+ROCQ compile theories/Soundness.v

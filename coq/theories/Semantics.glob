@@ -1,0 +1,154 @@
+DIGEST 4ba6e93d4eaa5b137c97f802b1f015cf
+FSAPSE.Semantics
+R27:32 Stdlib.Strings.String <> <> lib
+R34:37 Stdlib.Lists.List <> <> lib
+R39:43 Stdlib.Arith.Arith <> <> lib
+R45:52 Stdlib.Arith.PeanoNat <> <> lib
+R54:57 Stdlib.Bool.Bool <> <> lib
+R67:79 Stdlib.Lists.List ListNotations <> mod
+R108:113 SAPSE.Syntax <> <> lib
+R115:120 SAPSE.Typing <> <> lib
+mod 131:145 <> SAPSE_Semantics
+R155:166 SAPSE.Syntax SAPSE_Syntax <> mod
+R168:179 SAPSE.Typing SAPSE_Typing <> mod
+ind 193:195 SAPSE_Semantics val
+constr 209:212 SAPSE_Semantics VNat
+constr 229:233 SAPSE_Semantics VBool
+R219:222 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R216:218 Corelib.Init.Datatypes <> nat ind
+R223:225 SAPSE.Semantics <> val:1 ind
+R241:244 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R237:240 Corelib.Init.Datatypes <> bool ind
+R245:247 SAPSE.Semantics <> val:1 ind
+scheme 193:195 SAPSE_Semantics val_rect
+scheme 193:195 SAPSE_Semantics val_ind
+scheme 193:195 SAPSE_Semantics val_rec
+scheme 193:195 SAPSE_Semantics val_sind
+def 262:264 SAPSE_Semantics env
+R269:272 Corelib.Init.Datatypes <> list ind
+R280:282 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R275:279 SAPSE.Syntax SAPSE_Syntax ident def
+R283:285 SAPSE.Semantics SAPSE_Semantics val ind
+def 299:305 SAPSE_Semantics env_get
+R310:314 SAPSE.Syntax SAPSE_Syntax ident def
+binder 308:308 <> x:3
+R321:323 SAPSE.Semantics SAPSE_Semantics env def
+binder 318:319 <> ρ:4
+R328:333 Corelib.Init.Datatypes <> option ind
+R335:337 SAPSE.Semantics SAPSE_Semantics val ind
+R350:351 SAPSE.Semantics <> ρ:4 var
+R362:363 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R368:371 Corelib.Init.Datatypes <> None constr
+R382:383 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R377:377 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R379:379 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R381:381 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R394:403 Stdlib.Strings.String <> eqb def
+R405:405 SAPSE.Semantics <> x:3 var
+R426:432 SAPSE.Semantics <> env_get:5 def
+R434:434 SAPSE.Semantics <> x:3 var
+R414:417 Corelib.Init.Datatypes <> Some constr
+def 457:460 SAPSE_Semantics eval
+R466:468 SAPSE.Semantics SAPSE_Semantics env def
+binder 463:464 <> ρ:7
+R474:477 SAPSE.Syntax SAPSE_Syntax term ind
+binder 472:472 <> t:8
+R482:487 Corelib.Init.Datatypes <> option ind
+R489:491 SAPSE.Semantics SAPSE_Semantics val ind
+R504:504 SAPSE.Semantics <> t:8 var
+R515:518 SAPSE.Syntax SAPSE_Syntax tVar constr
+R525:531 SAPSE.Semantics SAPSE_Semantics env_get def
+R535:536 SAPSE.Semantics <> ρ:7 var
+R542:545 SAPSE.Syntax SAPSE_Syntax tNat constr
+R552:555 Corelib.Init.Datatypes <> Some constr
+R558:561 SAPSE.Semantics SAPSE_Semantics VNat constr
+R570:574 SAPSE.Syntax SAPSE_Syntax tBool constr
+R581:584 Corelib.Init.Datatypes <> Some constr
+R587:591 SAPSE.Semantics SAPSE_Semantics VBool constr
+R600:603 SAPSE.Syntax SAPSE_Syntax tAdd constr
+R635:638 SAPSE.Semantics <> eval:9 def
+R640:641 SAPSE.Semantics <> ρ:7 var
+R624:627 SAPSE.Semantics <> eval:9 def
+R629:630 SAPSE.Semantics <> ρ:7 var
+R658:661 Corelib.Init.Datatypes <> Some constr
+R664:667 SAPSE.Semantics SAPSE_Semantics VNat constr
+R673:676 Corelib.Init.Datatypes <> Some constr
+R679:682 SAPSE.Semantics SAPSE_Semantics VNat constr
+R690:693 Corelib.Init.Datatypes <> Some constr
+R696:699 SAPSE.Semantics SAPSE_Semantics VNat constr
+R703:703 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R724:727 Corelib.Init.Datatypes <> None constr
+R743:745 SAPSE.Syntax SAPSE_Syntax tEq constr
+R777:780 SAPSE.Semantics <> eval:9 def
+R782:783 SAPSE.Semantics <> ρ:7 var
+R766:769 SAPSE.Semantics <> eval:9 def
+R771:772 SAPSE.Semantics <> ρ:7 var
+R800:803 Corelib.Init.Datatypes <> Some constr
+R806:809 SAPSE.Semantics SAPSE_Semantics VNat constr
+R815:818 Corelib.Init.Datatypes <> Some constr
+R821:824 SAPSE.Semantics SAPSE_Semantics VNat constr
+R832:835 Corelib.Init.Datatypes <> Some constr
+R838:842 SAPSE.Semantics SAPSE_Semantics VBool constr
+R845:851 Stdlib.Arith.PeanoNat Nat eqb def
+R867:870 Corelib.Init.Datatypes <> Some constr
+R873:877 SAPSE.Semantics SAPSE_Semantics VBool constr
+R883:886 Corelib.Init.Datatypes <> Some constr
+R889:893 SAPSE.Semantics SAPSE_Semantics VBool constr
+R901:904 Corelib.Init.Datatypes <> Some constr
+R907:911 SAPSE.Semantics SAPSE_Semantics VBool constr
+R914:921 Stdlib.Bool.Bool <> eqb def
+R945:948 Corelib.Init.Datatypes <> None constr
+R964:967 SAPSE.Syntax SAPSE_Syntax tLam constr
+R978:981 Corelib.Init.Datatypes <> None constr
+R987:990 SAPSE.Syntax SAPSE_Syntax tApp constr
+R999:1002 Corelib.Init.Datatypes <> None constr
+R1008:1014 SAPSE.Syntax SAPSE_Syntax tForall constr
+R1025:1028 Corelib.Init.Datatypes <> None constr
+def 1049:1054 SAPSE_Semantics asProp
+R1059:1061 SAPSE.Semantics SAPSE_Semantics val ind
+binder 1057:1057 <> v:11
+R1082:1082 SAPSE.Semantics <> v:11 var
+R1093:1097 SAPSE.Semantics SAPSE_Semantics VBool constr
+R1099:1102 Corelib.Init.Datatypes <> true constr
+R1107:1110 Corelib.Init.Logic <> True ind
+R1116:1120 SAPSE.Semantics SAPSE_Semantics VBool constr
+R1122:1126 Corelib.Init.Datatypes <> false constr
+R1131:1135 Corelib.Init.Logic <> False ind
+R1146:1149 Corelib.Init.Logic <> True ind
+def 1170:1175 SAPSE_Semantics denote
+R1181:1183 SAPSE.Semantics SAPSE_Semantics env def
+binder 1178:1179 <> ρ:13
+R1189:1192 SAPSE.Syntax SAPSE_Syntax term ind
+binder 1187:1187 <> t:14
+R1213:1216 SAPSE.Semantics SAPSE_Semantics eval def
+R1218:1219 SAPSE.Semantics <> ρ:13 var
+R1221:1221 SAPSE.Semantics <> t:14 var
+R1232:1235 Corelib.Init.Datatypes <> Some constr
+R1242:1247 SAPSE.Semantics SAPSE_Semantics asProp def
+R1255:1258 Corelib.Init.Datatypes <> None constr
+R1263:1266 Corelib.Init.Logic <> True ind
+R1304:1309 SAPSE.Semantics SAPSE_Semantics denote def
+not 1285:1285 SAPSE_Semantics :::'⟦'_x_'⟧'_x
+prf 1339:1350 SAPSE_Semantics eval_eq_swap
+binder 1361:1362 <> ρ:15
+binder 1364:1364 <> a:16
+binder 1366:1366 <> b:17
+R1388:1390 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1371:1374 SAPSE.Semantics SAPSE_Semantics eval def
+R1376:1377 SAPSE.Semantics <> ρ:15 var
+R1380:1382 SAPSE.Syntax SAPSE_Syntax tEq constr
+R1384:1384 SAPSE.Semantics <> a:16 var
+R1386:1386 SAPSE.Semantics <> b:17 var
+R1391:1394 SAPSE.Semantics SAPSE_Semantics eval def
+R1396:1397 SAPSE.Semantics <> ρ:15 var
+R1400:1402 SAPSE.Syntax SAPSE_Syntax tEq constr
+R1404:1404 SAPSE.Semantics <> b:17 var
+R1406:1406 SAPSE.Semantics <> a:16 var
+R1455:1458 SAPSE.Semantics SAPSE_Semantics eval def
+R1455:1458 SAPSE.Semantics SAPSE_Semantics eval def
+R1485:1488 SAPSE.Semantics SAPSE_Semantics eval def
+R1485:1488 SAPSE.Semantics SAPSE_Semantics eval def
+R1601:1611 Stdlib.Arith.PeanoNat Nat eqb_sym thm
+R1601:1611 Stdlib.Arith.PeanoNat Nat eqb_sym thm
+R1601:1611 Stdlib.Arith.PeanoNat Nat eqb_sym thm
+R1656:1670 SAPSE.Semantics SAPSE_Semantics <> mod

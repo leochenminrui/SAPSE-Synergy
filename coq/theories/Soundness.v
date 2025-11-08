@@ -1,0 +1,29 @@
+From Stdlib Require Import String List.
+Import ListNotations.
+From SAPSE Require Import Syntax Typing Semantics Sanitizer.
+
+Module SAPSE_Soundness.
+Import SAPSE_Syntax SAPSE_Typing SAPSE_Semantics SAPSE_Sanitizer.
+
+Theorem R_AST_sound :
+  forall Γ Γ_ext t τ,
+    WellFormedU t ->
+    Γ ⊢ t ∈ τ ->
+  let (Γ', t') := R_AST Γ_ext Γ t in
+    Γ ⊆ Γ' /\
+    Γ' ⊢ t' ∈ τ /\
+    forall ρ, ⟦t⟧ρ <-> ⟦t'⟧ρ.
+Proof.
+  intros Γ Γ_ext t τ Hwf Htyp.
+  unfold R_AST.
+  set (Γ' := R_req Γ_ext Γ).
+  assert (Hinc: Γ ⊆ Γ') by (apply req_includes_right; auto).
+  assert (Hty1: Γ ⊢ R_bind t ∈ τ) by (apply R_bind_typing; auto).
+  assert (Hty2: Γ' ⊢ R_bind t ∈ τ) by (eapply weakening_req; eauto).
+  assert (Hty3: Γ' ⊢ R_eq (R_bind t) ∈ τ) by (eapply R_eq_typing; eauto).
+  split; [assumption|].
+  split; [assumption|].
+  intros ρ. etransitivity; [apply R_bind_sem|apply R_eq_sem].
+Qed.
+
+End SAPSE_Soundness.

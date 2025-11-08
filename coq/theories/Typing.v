@@ -1,0 +1,54 @@
+From Stdlib Require Import String List Arith PeanoNat Bool.
+Import ListNotations.
+From SAPSE Require Import Syntax.
+
+Module SAPSE_Typing.
+Import SAPSE_Syntax.
+
+Definition binding := (ident * ty)%type.
+Definition ctx := list binding.
+
+Fixpoint lookup (x:ident) (Γ:ctx) : option ty :=
+  match Γ with
+  | [] => None
+  | (y,A)::Γ' => if String.eqb x y then Some A else lookup x Γ'
+  end.
+
+Definition ctx_includes (Γ Γ':ctx) : Prop :=
+  forall x A, lookup x Γ = Some A -> lookup x Γ' = Some A.
+Infix "⊆" := ctx_includes (at level 70).
+
+Definition disjoint_ctx (Γ_ext Γ:ctx) : Prop :=
+  forall x A, lookup x Γ_ext = Some A -> lookup x Γ = None.
+
+Definition fresh (x:ident) (Γ:ctx) : Prop := lookup x Γ = None.
+
+Inductive has_type : ctx -> term -> ty -> Prop :=
+| T_Var : forall Γ x A, lookup x Γ = Some A -> has_type Γ (tVar x) A
+| T_Nat : forall Γ n, has_type Γ (tNat n) TNat
+| T_Bool: forall Γ b, has_type Γ (tBool b) TBool
+| T_Add : forall Γ t1 t2,
+    has_type Γ t1 TNat -> has_type Γ t2 TNat -> has_type Γ (tAdd t1 t2) TNat
+| T_Eq : forall Γ t1 t2 A,
+    has_type Γ t1 A -> has_type Γ t2 A -> has_type Γ (tEq t1 t2) TBool
+| T_Lam : forall Γ x A body B,
+    has_type ((x,A)::Γ) body B -> has_type Γ (tLam x A body) (TArrow A B)
+| T_App : forall Γ t1 t2 A B,
+    has_type Γ t1 (TArrow A B) -> has_type Γ t2 A -> has_type Γ (tApp t1 t2) B
+| T_Forall : forall Γ x A body,
+    has_type ((x,A)::Γ) body TBool -> has_type Γ (tForall x A body) TBool.
+
+Notation "Γ ⊢ t ∈ τ" := (has_type Γ t τ) (at level 80).
+#[local] Hint Constructors has_type : core.
+
+Lemma lookup_app_preserve : forall x A Γ Δ,
+  lookup x Γ = Some A -> lookup x (Γ ++ Δ) = Some A.
+Proof.
+  intros x A Γ; induction Γ as [|[y B] Γ IH]; intros Δ H; simpl in *.
+  - inversion H.
+  - destruct (String.eqb x y) eqn:E; simpl.
+    + inversion H; subst; reflexivity.
+    + apply (IH Δ H).
+Qed.
+
+End SAPSE_Typing.

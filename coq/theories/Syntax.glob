@@ -1,0 +1,92 @@
+DIGEST d077d297c2121ffcab72cd05e19e2243
+FSAPSE.Syntax
+R27:32 Stdlib.Strings.String <> <> lib
+R34:37 Stdlib.Lists.List <> <> lib
+R39:43 Stdlib.Arith.Arith <> <> lib
+R45:52 Stdlib.Arith.PeanoNat <> <> lib
+R54:57 Stdlib.Bool.Bool <> <> lib
+R67:79 Stdlib.Lists.List ListNotations <> mod
+mod 90:101 <> SAPSE_Syntax
+def 116:120 SAPSE_Syntax ident
+R125:130 Stdlib.Strings.String <> string ind
+ind 144:145 SAPSE_Syntax ty
+constr 159:162 SAPSE_Syntax TNat
+constr 166:170 SAPSE_Syntax TBool
+constr 174:179 SAPSE_Syntax TArrow
+R188:189 SAPSE.Syntax <> ty:1 ind
+binder 182:182 <> a:3
+binder 184:184 <> b:4
+scheme 144:145 SAPSE_Syntax ty_rect
+scheme 144:145 SAPSE_Syntax ty_ind
+scheme 144:145 SAPSE_Syntax ty_rec
+scheme 144:145 SAPSE_Syntax ty_sind
+ind 204:207 SAPSE_Syntax term
+constr 221:224 SAPSE_Syntax tVar
+constr 240:243 SAPSE_Syntax tNat
+constr 257:261 SAPSE_Syntax tBool
+constr 275:278 SAPSE_Syntax tAdd
+constr 297:299 SAPSE_Syntax tEq
+constr 319:322 SAPSE_Syntax tLam
+constr 357:360 SAPSE_Syntax tApp
+constr 379:385 SAPSE_Syntax tForall
+R231:235 SAPSE.Syntax SAPSE_Syntax ident def
+binder 229:229 <> x:7
+R250:252 Corelib.Init.Datatypes <> nat ind
+binder 248:248 <> n:8
+R267:270 Corelib.Init.Datatypes <> bool ind
+binder 265:265 <> b:9
+R289:292 SAPSE.Syntax <> term:5 ind
+binder 283:284 <> t1:10
+binder 286:287 <> t2:11
+R311:314 SAPSE.Syntax <> term:5 ind
+binder 305:306 <> t1:12
+binder 308:309 <> t2:13
+R329:333 SAPSE.Syntax SAPSE_Syntax ident def
+binder 327:327 <> x:14
+R339:340 SAPSE.Syntax SAPSE_Syntax ty ind
+binder 337:337 <> A:15
+R349:352 SAPSE.Syntax <> term:5 ind
+binder 344:347 <> body:16
+R371:374 SAPSE.Syntax <> term:5 ind
+binder 365:366 <> t1:17
+binder 368:369 <> t2:18
+R390:394 SAPSE.Syntax SAPSE_Syntax ident def
+binder 388:388 <> x:19
+R400:401 SAPSE.Syntax SAPSE_Syntax ty ind
+binder 398:398 <> A:20
+R410:413 SAPSE.Syntax <> term:5 ind
+binder 405:408 <> body:21
+scheme 204:207 SAPSE_Syntax term_rect
+scheme 204:207 SAPSE_Syntax term_ind
+scheme 204:207 SAPSE_Syntax term_rec
+scheme 204:207 SAPSE_Syntax term_sind
+def 427:435 SAPSE_Syntax term_size
+R440:443 SAPSE.Syntax SAPSE_Syntax term ind
+binder 438:438 <> t:22
+R448:450 Corelib.Init.Datatypes <> nat ind
+R463:463 SAPSE.Syntax <> t:22 var
+R474:477 SAPSE.Syntax SAPSE_Syntax tVar constr
+R483:486 SAPSE.Syntax SAPSE_Syntax tNat constr
+R492:496 SAPSE.Syntax SAPSE_Syntax tBool constr
+R509:512 SAPSE.Syntax SAPSE_Syntax tAdd constr
+R520:522 SAPSE.Syntax SAPSE_Syntax tEq constr
+R530:533 SAPSE.Syntax SAPSE_Syntax tApp constr
+R557:559 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R543:545 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R546:554 SAPSE.Syntax <> term_size:23 def
+R560:568 SAPSE.Syntax <> term_size:23 def
+R557:559 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R543:545 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R546:554 SAPSE.Syntax <> term_size:23 def
+R560:568 SAPSE.Syntax <> term_size:23 def
+R557:559 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R543:545 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R546:554 SAPSE.Syntax <> term_size:23 def
+R560:568 SAPSE.Syntax <> term_size:23 def
+R576:579 SAPSE.Syntax SAPSE_Syntax tLam constr
+R589:595 SAPSE.Syntax SAPSE_Syntax tForall constr
+R607:609 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R610:618 SAPSE.Syntax <> term_size:23 def
+R607:609 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R610:618 SAPSE.Syntax <> term_size:23 def
+R634:645 SAPSE.Syntax SAPSE_Syntax <> mod

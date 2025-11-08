@@ -1,0 +1,267 @@
+DIGEST 4b457b1a2966f5436a4b588624c6c990
+FSAPSE.Typing
+R27:32 Stdlib.Strings.String <> <> lib
+R34:37 Stdlib.Lists.List <> <> lib
+R39:43 Stdlib.Arith.Arith <> <> lib
+R45:52 Stdlib.Arith.PeanoNat <> <> lib
+R54:57 Stdlib.Bool.Bool <> <> lib
+R67:79 Stdlib.Lists.List ListNotations <> mod
+R108:113 SAPSE.Syntax <> <> lib
+mod 124:135 <> SAPSE_Typing
+R145:156 SAPSE.Syntax SAPSE_Syntax <> mod
+def 171:177 SAPSE_Typing binding
+R188:190 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R183:187 SAPSE.Syntax SAPSE_Syntax ident def
+R191:192 SAPSE.Syntax SAPSE_Syntax ty ind
+def 212:214 SAPSE_Typing ctx
+R219:222 Corelib.Init.Datatypes <> list ind
+R224:230 SAPSE.Typing SAPSE_Typing binding def
+def 243:248 SAPSE_Typing lookup
+R253:257 SAPSE.Syntax SAPSE_Syntax ident def
+binder 251:251 <> x:1
+R264:266 SAPSE.Typing SAPSE_Typing ctx def
+binder 261:262 <> Γ:2
+R271:276 Corelib.Init.Datatypes <> option ind
+R278:279 SAPSE.Syntax SAPSE_Syntax ty ind
+R292:293 SAPSE.Typing <> Γ:2 var
+R304:305 Stdlib.Lists.List ListNotations ::list_scope:'['_']' not
+R310:313 Corelib.Init.Datatypes <> None constr
+R324:325 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R319:319 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R321:321 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R323:323 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R336:345 Stdlib.Strings.String <> eqb def
+R347:347 SAPSE.Typing <> x:1 var
+R368:373 SAPSE.Typing <> lookup:3 def
+R375:375 SAPSE.Typing <> x:1 var
+R356:359 Corelib.Init.Datatypes <> Some constr
+def 400:411 SAPSE_Typing ctx_includes
+R421:423 SAPSE.Typing SAPSE_Typing ctx def
+binder 414:415 <> Γ:5
+binder 417:419 <> Γ':6
+binder 445:445 <> x:7
+binder 447:447 <> A:8
+R470:473 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R461:463 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R450:455 SAPSE.Typing SAPSE_Typing lookup def
+R457:457 SAPSE.Typing <> x:7 var
+R459:460 SAPSE.Typing <> Γ:5 var
+R464:467 Corelib.Init.Datatypes <> Some constr
+R469:469 SAPSE.Typing <> A:8 var
+R486:488 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R474:479 SAPSE.Typing SAPSE_Typing lookup def
+R481:481 SAPSE.Typing <> x:7 var
+R483:485 SAPSE.Typing <> Γ':6 var
+R489:492 Corelib.Init.Datatypes <> Some constr
+R494:494 SAPSE.Typing <> A:8 var
+R512:523 SAPSE.Typing SAPSE_Typing ctx_includes def
+not 503:503 SAPSE_Typing :::x_'⊆'_x
+def 552:563 SAPSE_Typing disjoint_ctx
+R576:578 SAPSE.Typing SAPSE_Typing ctx def
+binder 566:571 <> Γ_ext:9
+binder 573:574 <> Γ:10
+binder 600:600 <> x:11
+binder 602:602 <> A:12
+R629:632 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R620:622 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R605:610 SAPSE.Typing SAPSE_Typing lookup def
+R612:612 SAPSE.Typing <> x:11 var
+R614:619 SAPSE.Typing <> Γ_ext:9 var
+R623:626 Corelib.Init.Datatypes <> Some constr
+R628:628 SAPSE.Typing <> A:12 var
+R644:646 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R633:638 SAPSE.Typing SAPSE_Typing lookup def
+R640:640 SAPSE.Typing <> x:11 var
+R642:643 SAPSE.Typing <> Γ:10 var
+R647:650 Corelib.Init.Datatypes <> None constr
+def 665:669 SAPSE_Typing fresh
+R674:678 SAPSE.Syntax SAPSE_Syntax ident def
+binder 672:672 <> x:13
+R685:687 SAPSE.Typing SAPSE_Typing ctx def
+binder 682:683 <> Γ:14
+R711:713 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R700:705 SAPSE.Typing SAPSE_Typing lookup def
+R707:707 SAPSE.Typing <> x:13 var
+R709:710 SAPSE.Typing <> Γ:14 var
+R714:717 Corelib.Init.Datatypes <> None constr
+ind 731:738 SAPSE_Typing has_type
+constr 773:777 SAPSE_Typing T_Var
+constr 845:849 SAPSE_Typing T_Nat
+constr 894:899 SAPSE_Typing T_Bool
+constr 945:949 SAPSE_Typing T_Add
+constr 1052:1055 SAPSE_Typing T_Eq
+constr 1154:1158 SAPSE_Typing T_Lam
+constr 1262:1266 SAPSE_Typing T_App
+constr 1375:1382 SAPSE_Typing T_Forall
+R745:748 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R742:744 SAPSE.Typing SAPSE_Typing ctx def
+R753:756 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R749:752 SAPSE.Syntax SAPSE_Syntax term ind
+R759:762 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R757:758 SAPSE.Syntax SAPSE_Syntax ty ind
+binder 788:789 <> Γ:17
+binder 791:791 <> x:18
+binder 793:793 <> A:19
+R816:819 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R807:809 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R796:801 SAPSE.Typing SAPSE_Typing lookup def
+R803:803 SAPSE.Typing <> x:18 var
+R805:806 SAPSE.Typing <> Γ:17 var
+R810:813 Corelib.Init.Datatypes <> Some constr
+R815:815 SAPSE.Typing <> A:19 var
+R820:827 SAPSE.Typing <> has_type:15 ind
+R841:841 SAPSE.Typing <> A:19 var
+R833:836 SAPSE.Syntax SAPSE_Syntax tVar constr
+R838:838 SAPSE.Typing <> x:18 var
+R829:830 SAPSE.Typing <> Γ:17 var
+binder 860:861 <> Γ:20
+binder 863:863 <> n:21
+R866:873 SAPSE.Typing <> has_type:15 ind
+R887:890 SAPSE.Syntax SAPSE_Syntax TNat constr
+R879:882 SAPSE.Syntax SAPSE_Syntax tNat constr
+R884:884 SAPSE.Typing <> n:21 var
+R875:876 SAPSE.Typing <> Γ:20 var
+binder 909:910 <> Γ:22
+binder 912:912 <> b:23
+R915:922 SAPSE.Typing <> has_type:15 ind
+R937:941 SAPSE.Syntax SAPSE_Syntax TBool constr
+R928:932 SAPSE.Syntax SAPSE_Syntax tBool constr
+R934:934 SAPSE.Typing <> b:23 var
+R924:925 SAPSE.Typing <> Γ:22 var
+binder 960:961 <> Γ:24
+binder 963:964 <> t1:25
+binder 966:967 <> t2:26
+R993:996 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R974:981 SAPSE.Typing <> has_type:15 ind
+R989:992 SAPSE.Syntax SAPSE_Syntax TNat constr
+R986:987 SAPSE.Typing <> t1:25 var
+R983:984 SAPSE.Typing <> Γ:24 var
+R1016:1019 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R997:1004 SAPSE.Typing <> has_type:15 ind
+R1012:1015 SAPSE.Syntax SAPSE_Syntax TNat constr
+R1009:1010 SAPSE.Typing <> t2:26 var
+R1006:1007 SAPSE.Typing <> Γ:24 var
+R1020:1027 SAPSE.Typing <> has_type:15 ind
+R1045:1048 SAPSE.Syntax SAPSE_Syntax TNat constr
+R1033:1036 SAPSE.Syntax SAPSE_Syntax tAdd constr
+R1038:1039 SAPSE.Typing <> t1:25 var
+R1041:1042 SAPSE.Typing <> t2:26 var
+R1029:1030 SAPSE.Typing <> Γ:24 var
+binder 1066:1067 <> Γ:27
+binder 1069:1070 <> t1:28
+binder 1072:1073 <> t2:29
+binder 1075:1075 <> A:30
+R1098:1101 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1082:1089 SAPSE.Typing <> has_type:15 ind
+R1097:1097 SAPSE.Typing <> A:30 var
+R1094:1095 SAPSE.Typing <> t1:28 var
+R1091:1092 SAPSE.Typing <> Γ:27 var
+R1118:1121 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1102:1109 SAPSE.Typing <> has_type:15 ind
+R1117:1117 SAPSE.Typing <> A:30 var
+R1114:1115 SAPSE.Typing <> t2:29 var
+R1111:1112 SAPSE.Typing <> Γ:27 var
+R1122:1129 SAPSE.Typing <> has_type:15 ind
+R1146:1150 SAPSE.Syntax SAPSE_Syntax TBool constr
+R1135:1137 SAPSE.Syntax SAPSE_Syntax tEq constr
+R1139:1140 SAPSE.Typing <> t1:28 var
+R1142:1143 SAPSE.Typing <> t2:29 var
+R1131:1132 SAPSE.Typing <> Γ:27 var
+binder 1169:1170 <> Γ:31
+binder 1172:1172 <> x:32
+binder 1174:1174 <> A:33
+binder 1176:1179 <> body:34
+binder 1181:1181 <> B:35
+R1215:1218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1188:1195 SAPSE.Typing <> has_type:15 ind
+R1214:1214 SAPSE.Typing <> B:35 var
+R1209:1212 SAPSE.Typing <> body:34 var
+R1203:1204 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1198:1198 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1200:1200 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1202:1202 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1199:1199 SAPSE.Typing <> x:32 var
+R1201:1201 SAPSE.Typing <> A:33 var
+R1205:1206 SAPSE.Typing <> Γ:31 var
+R1219:1226 SAPSE.Typing <> has_type:15 ind
+R1248:1253 SAPSE.Syntax SAPSE_Syntax TArrow constr
+R1255:1255 SAPSE.Typing <> A:33 var
+R1257:1257 SAPSE.Typing <> B:35 var
+R1232:1235 SAPSE.Syntax SAPSE_Syntax tLam constr
+R1237:1237 SAPSE.Typing <> x:32 var
+R1239:1239 SAPSE.Typing <> A:33 var
+R1241:1244 SAPSE.Typing <> body:34 var
+R1228:1229 SAPSE.Typing <> Γ:31 var
+binder 1277:1278 <> Γ:36
+binder 1280:1281 <> t1:37
+binder 1283:1284 <> t2:38
+binder 1286:1286 <> A:39
+binder 1288:1288 <> B:40
+R1322:1325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1295:1302 SAPSE.Typing <> has_type:15 ind
+R1311:1316 SAPSE.Syntax SAPSE_Syntax TArrow constr
+R1318:1318 SAPSE.Typing <> A:39 var
+R1320:1320 SAPSE.Typing <> B:40 var
+R1307:1308 SAPSE.Typing <> t1:37 var
+R1304:1305 SAPSE.Typing <> Γ:36 var
+R1342:1345 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1326:1333 SAPSE.Typing <> has_type:15 ind
+R1341:1341 SAPSE.Typing <> A:39 var
+R1338:1339 SAPSE.Typing <> t2:38 var
+R1335:1336 SAPSE.Typing <> Γ:36 var
+R1346:1353 SAPSE.Typing <> has_type:15 ind
+R1371:1371 SAPSE.Typing <> B:40 var
+R1359:1362 SAPSE.Syntax SAPSE_Syntax tApp constr
+R1364:1365 SAPSE.Typing <> t1:37 var
+R1367:1368 SAPSE.Typing <> t2:38 var
+R1355:1356 SAPSE.Typing <> Γ:36 var
+binder 1393:1394 <> Γ:41
+binder 1396:1396 <> x:42
+binder 1398:1398 <> A:43
+binder 1400:1403 <> body:44
+R1441:1444 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1410:1417 SAPSE.Typing <> has_type:15 ind
+R1436:1440 SAPSE.Syntax SAPSE_Syntax TBool constr
+R1431:1434 SAPSE.Typing <> body:44 var
+R1425:1426 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1420:1420 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1422:1422 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1424:1424 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1421:1421 SAPSE.Typing <> x:42 var
+R1423:1423 SAPSE.Typing <> A:43 var
+R1427:1428 SAPSE.Typing <> Γ:41 var
+R1445:1452 SAPSE.Typing <> has_type:15 ind
+R1476:1480 SAPSE.Syntax SAPSE_Syntax TBool constr
+R1458:1464 SAPSE.Syntax SAPSE_Syntax tForall constr
+R1466:1466 SAPSE.Typing <> x:42 var
+R1468:1468 SAPSE.Typing <> A:43 var
+R1470:1473 SAPSE.Typing <> body:44 var
+R1454:1455 SAPSE.Typing <> Γ:41 var
+scheme 731:738 SAPSE_Typing has_type_ind
+scheme 731:738 SAPSE_Typing has_type_sind
+R1515:1522 SAPSE.Typing SAPSE_Typing has_type ind
+not 1493:1493 SAPSE_Typing :::x_'⊢'_x_'∈'_x
+R1575:1582 SAPSE.Typing <> has_type ind
+prf 1599:1617 SAPSE_Typing lookup_app_preserve
+binder 1628:1628 <> x:45
+binder 1630:1630 <> A:46
+binder 1632:1633 <> Γ:47
+binder 1635:1636 <> Δ:48
+R1661:1664 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1652:1654 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1641:1646 SAPSE.Typing SAPSE_Typing lookup def
+R1648:1648 SAPSE.Typing <> x:45 var
+R1650:1651 SAPSE.Typing <> Γ:47 var
+R1655:1658 Corelib.Init.Datatypes <> Some constr
+R1660:1660 SAPSE.Typing <> A:46 var
+R1684:1686 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1665:1670 SAPSE.Typing SAPSE_Typing lookup def
+R1672:1672 SAPSE.Typing <> x:45 var
+R1677:1680 Corelib.Init.Datatypes <> ::list_scope:x_'++'_x not
+R1675:1676 SAPSE.Typing <> Γ:47 var
+R1681:1682 SAPSE.Typing <> Δ:48 var
+R1687:1690 Corelib.Init.Datatypes <> Some constr
+R1692:1692 SAPSE.Typing <> A:46 var
+R1807:1816 Stdlib.Strings.String <> eqb def
+R1807:1816 Stdlib.Strings.String <> eqb def
+R1909:1920 SAPSE.Typing SAPSE_Typing <> mod

@@ -1,0 +1,20 @@
+{"id":"L1","name":"plus_comm","text":"forall a b : nat, a + b = b + a."}
+{"id":"L2","name":"plus_0_r","text":"forall n : nat, n + 0 = n."}
+{"id":"L3","name":"plus_0_l","text":"forall n : nat, 0 + n = n."}
+{"id":"L4","name":"mult_0_r","text":"forall n : nat, n * 0 = 0."}
+{"id":"L5","name":"mult_0_l","text":"forall n : nat, 0 * n = 0."}
+{"id":"L6","name":"mult_comm","text":"forall a b : nat, a * b = b * a."}
+{"id":"L7","name":"plus_assoc","text":"forall a b c : nat, a + (b + c) = (a + b) + c."}
+{"id":"L8","name":"mult_assoc","text":"forall a b c : nat, a * (b * c) = (a * b) * c."}
+{"id":"L9","name":"length_rev","text":"forall (A : Type) (l : list A), length (rev l) = length l."}
+{"id":"L10","name":"app_length","text":"forall (A : Type) (l1 l2 : list A), length (l1 ++ l2) = length l1 + length l2."}
+{"id":"L11","name":"rev_app_distr","text":"forall (A : Type) (l1 l2 : list A), rev (l1 ++ l2) = rev l2 ++ rev l1."}
+{"id":"L12","name":"and_comm","text":"forall P Q : Prop, P /\\ Q -> Q /\\ P."}
+{"id":"L13","name":"or_comm","text":"forall P Q : Prop, P \\/ Q -> Q \\/ P."}
+{"id":"L14","name":"plus_succ_r","text":"forall n m : nat, n + S m = S (n + m)."}
+{"id":"L15","name":"mult_succ_r","text":"forall n m : nat, n * S m = n + n * m."}
+{"id":"L16","name":"le_refl","text":"forall n : nat, n <= n."}
+{"id":"L17","name":"le_trans","text":"forall n m p : nat, n <= m -> m <= p -> n <= p."}
+{"id":"L18","name":"nat_ind_principle","text":"forall P : nat -> Prop, P 0 -> (forall n, P n -> P (S n)) -> forall n, P n."}
+{"id":"L19","name":"list_ind_principle","text":"forall (A : Type) (P : list A -> Prop), P [] -> (forall (a : A) (l : list A), P l -> P (a :: l)) -> forall l, P l."}
+{"id":"L20","name":"eq_refl","text":"forall (A : Type) (x : A), x = x."}
