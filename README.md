@@ -4,10 +4,6 @@
 [![Coq](https://img.shields.io/badge/Coq-9.1.0-blue.svg)](https://coq.inria.fr/)
 [![Python](https://img.shields.io/badge/Python-3.10+-green.svg)](https://www.python.org/)
 
-**Artifact for FM 2026 Paper**
-
-> **SAPSE-Synergy formalizes a verified bridge between neural lemma generation and Coq proof checking, making the trade-off between soundness and empirical coverage explicit and measurable.**
-
 ---
 
 ## Overview
@@ -321,23 +317,6 @@ bash run_full_experiment.sh --limit 10
 cd python/
 pytest tests/ -v
 ```
-
----
-
-## Citation
-
-If you use this artifact in your research, please cite:
-
-```bibtex
-@inproceedings{sapse-synergy-fm2026,
-  title     = {SAPSE-Synergy: Balancing Formal Soundness and Empirical Coverage in Neural Theorem Proving},
-  author    = {[Author Names]},
-  booktitle = {Proceedings of the 26th International Symposium on Formal Methods (FM 2026)},
-  year      = {2026},
-  doi       = {10.5281/zenodo.XXXXXXX}
-}
-```
-
 ---
 
 ## License
@@ -367,8 +346,6 @@ For questions about artifact evaluation or reproduction:
 ## Acknowledgments
 
 We thank the FM 2026 artifact evaluation committee and the Coq community for their valuable feedback.
-
-This work was supported by [funding sources].
 
 ---
 
