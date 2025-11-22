@@ -1,6 +1,5 @@
 # SAPSE-Synergy: Balancing Formal Soundness and Empirical Coverage in Neural Theorem Proving
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Coq](https://img.shields.io/badge/Coq-9.1.0-blue.svg)](https://coq.inria.fr/)
 [![Python](https://img.shields.io/badge/Python-3.10+-green.svg)](https://www.python.org/)
