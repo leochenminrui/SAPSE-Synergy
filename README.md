@@ -343,6 +343,29 @@ For questions about artifact evaluation or reproduction:
 
 ---
 
+## Citation
+
+<!-- TODO (authors): fill in author list, journal, volume/DOI before camera-ready. -->
+```bibtex
+@InProceedings{10.1007/978-3-032-26204-2_8,
+author="Chen, Minrui
+and Jiang, Huidong
+and Saigo, Hiroto",
+editor="Sampaio, Augusto
+and Stoelinga, Marielle",
+title="SAPSE-Synergy: Balancing Formal Soundness and Empirical Coverage in Neural Theorem Proving",
+booktitle="Formal Methods",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="151--169",
+abstract="Large language models (LLMs) can propose candidate lemmas, yet translating natural-language reasoning into verified Coq artifacts remains difficult due to semantic drift, missing abstractions, and weak type discipline. Most existing systems treat the prover as a black-box filter: as long as some candidates verify, little is known about which transformations are semantically safe, or how much coverage must be sacrificed to obtain formal guarantees.",
+isbn="978-3-032-26204-2"
+}
+```
+
+---
+
 ## Acknowledgments
 
 We thank the FM 2026 artifact evaluation committee and the Coq community for their valuable feedback.
