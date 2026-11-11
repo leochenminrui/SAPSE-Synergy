@@ -12,6 +12,7 @@ Usage:
 import argparse
 import csv
 import json
+import shutil
 from pathlib import Path
 from typing import List, Dict, Any
 from collections import defaultdict
@@ -81,7 +82,15 @@ def create_verifier_fn(config: Config):
     timeout = config.get("verify.timeout", 30)
     random_seed = config.get("verify.random_seed", 0)
 
+    if not use_mock and shutil.which(coqc_path) is None:
+        raise RuntimeError(
+            "Real evaluation requires coqc on PATH. Use --use-mock-verifier "
+            "only for a labeled functionality demonstration."
+        )
+
     verifier = create_verifier(use_mock=use_mock, coqc_path=coqc_path, timeout=timeout, random_seed=random_seed)
+    if not use_mock and verifier.__class__.__name__ == "MockVerifier":
+        raise RuntimeError("Real Coq verifier initialization failed; refusing mock fallback.")
 
     def verifier_fn(coq_code: str) -> Dict[str, str]:
         """Wrapper to match expected interface."""

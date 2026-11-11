@@ -791,6 +791,13 @@ Examples:
         help="Output directory for analysis results (default: outputs/analysis)"
     )
 
+    parser.add_argument(
+        "--input",
+        type=str,
+        default=None,
+        help="Input JSONL containing drafts (default: repository benchmark input)"
+    )
+
     # Analysis flags
     parser.add_argument("--all", action="store_true", help="Run all analyses")
     parser.add_argument("--fragment", action="store_true", help="Fragment coverage analysis")
@@ -831,7 +838,7 @@ Examples:
     logger.info(f"Total lemmas: {len(joint_table)}")
 
     # Determine data_jsonl path (input data with drafts)
-    data_jsonl = Path("data/synergy_rag_2k.jsonl")  # Default
+    data_jsonl = Path(__file__).resolve().parents[2] / "data/input/synergy_rag_2k.jsonl"
     # Try to auto-detect from experiment config if available
     config_yaml = experiment_dir / "config.yaml"
     if config_yaml.exists():
@@ -841,6 +848,9 @@ Examples:
             data_path = exp_config.get('data', {}).get('nl_steps_path')
             if data_path:
                 data_jsonl = Path(data_path)
+
+    if args.input:
+        data_jsonl = Path(args.input)
 
     # PART I: Extended Experiment Analysis
     logger.info("=" * 60)

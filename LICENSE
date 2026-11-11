@@ -20,33 +20,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
 
-## Third-Party Components
-
-This project includes or depends on the following third-party components:
-
-### Coq Standard Library
-- License: LGPL 2.1
-- Source: https://coq.inria.fr/
-
-### CompCert (corpus only, not distributed)
-- License: INRIA Non-Commercial License
-- Source: https://compcert.org/
-- Note: CompCert lemmas used as corpus data only; not redistributed
-
-### FAISS
-- License: MIT License
-- Source: https://github.com/facebookresearch/faiss
-
-### Transformers (Hugging Face)
-- License: Apache 2.0
-- Source: https://github.com/huggingface/transformers
-
-### Sentence Transformers
-- License: Apache 2.0
-- Source: https://github.com/UKPLab/sentence-transformers
-
-### PyTorch
-- License: BSD-style License
-- Source: https://pytorch.org/
+Third-party code, dependencies, and source-derived data retain their upstream
+terms. See THIRD_PARTY_NOTICES.md and data/README.md for attribution and scope.

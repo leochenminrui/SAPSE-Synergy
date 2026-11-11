@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use SAPSE-Synergy or its benchmark, cite the published FM 2026 paper below. Record the software commit used separately."
+title: SAPSE-Synergy
+type: software
+repository-code: "https://github.com/leochenminrui/SAPSE-Synergy"
+url: "https://github.com/leochenminrui/SAPSE-Synergy"
+license: MIT
+authors:
+  - family-names: Chen
+    given-names: Minrui
+    orcid: "https://orcid.org/0000-0002-5845-3200"
+  - family-names: Jiang
+    given-names: Huidong
+    orcid: "https://orcid.org/0009-0003-3859-0536"
+  - family-names: Saigo
+    given-names: Hiroto
+    orcid: "https://orcid.org/0000-0001-5314-5367"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: Chen
+      given-names: Minrui
+    - family-names: Jiang
+      given-names: Huidong
+    - family-names: Saigo
+      given-names: Hiroto
+  title: "SAPSE-Synergy: Balancing Formal Soundness and Empirical Coverage in Neural Theorem Proving"
+  collection-title: Formal Methods
+  collection-type: proceedings
+  volume: "16556"
+  start: 151
+  end: 169
+  year: 2026
+  date-published: "2026-05-18"
+  publisher:
+    name: Springer Nature Switzerland
+    city: Cham
+  doi: "10.1007/978-3-032-26204-2_8"
+  url: "https://doi.org/10.1007/978-3-032-26204-2_8"

@@ -1,0 +1,3 @@
+ecb2dd9ae34b2adaf1c7cb345aab50daecf19eba7c1653c4403484d7cecb7d6c  data/input/synergy_rag_2k.jsonl
+5acffef29e16f1dc18b818610ff1518dcc492b626fd29f780ddcd7905b3ec3a4  data/samples/coq_lemmas.jsonl
+895803cf754c5c209952c853e5a1b1e35128d5b3fd3ecf45f89711de92f38ef9  data/samples/nl_proofs.jsonl

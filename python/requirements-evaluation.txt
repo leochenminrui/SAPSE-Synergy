@@ -1,0 +1,14 @@
+# Tested benchmark-evaluation environment: Python 3.12.
+# The fixed-draft experiment does not require embedding models or API clients.
+numpy==2.2.6
+loguru==0.7.3
+PyYAML==6.0.3
+jsonlines==4.0.0
+pytest==8.4.2
+
+# Transitive packages in the tested evaluation environment.
+attrs==26.1.0
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0

@@ -1,4 +1,4 @@
-# Simple Makefile for SAPSE-Coq (Coq 8.19)
+# Regenerate the toolchain-specific build file locally (paper: Rocq 9.1.0).
 COQPROJECT=_CoqProject
 COQMAKEFILE=Makefile.coq
 

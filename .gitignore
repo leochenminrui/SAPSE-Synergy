@@ -201,6 +201,23 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# Locally generated Rocq build products and editor backups
+coq/Makefile.coq
+coq/Makefile.coq.conf
+coq/.Makefile.coq.d
+*.vo
+*.vok
+*.vos
+*.glob
+*.aux
+*.bak
+.lia.cache
+.nia.cache
+
+# Fresh evaluations; committed outputs are immutable reference records
+/outputs/reproduction_run/
+/outputs/analysis_reproduction/
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
